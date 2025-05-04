@@ -4,8 +4,8 @@
 
 - **Group Number**: 2
 - **Members**:
-  - AHMED AL MUGHIRAH– ID: 202018480
-  - ESSA  ALMUTAWA  – ID: 201959470
+  - AHMED AL MUGHIRAH– ID: 202018480 (50%) 
+  - ESSA  ALMUTAWA  – ID: 201959470  (50%)
 
 ---
 
@@ -15,20 +15,14 @@
 ics344-project/
 │
 ├── Phase1/
-│   ├── setup/                  # IP and service detection
-│   ├── metasploit/             # Metasploit SMB attack
 │   ├── custom-script/          # Simulated FTP attack via Python
-│   └── notes.md
+│   └── Report.pdf
 │
 ├── Phase2/
-│   ├── siem-setup/             # Simulated SIEM log integration
-│   ├── analysis/               # Visualization and attack log analysis
-│   └── notes.md
+│   └── Report.pdf
 │
 ├── Phase3/
-│   ├── defense/                # Defense implementation (e.g., disabling SMBv1)
-│   ├── results/                # Before vs After comparison screenshots
-│   └── notes.md
+│   └── Report.pdf
 ```
 
 ---
@@ -52,11 +46,4 @@ ics344-project/
 - Provided screenshots for before-and-after comparison
 
 ---
-
-## 📌 Notes
-- All configurations, scripts, and screenshots are organized per phase
-- Each phase includes a `notes.md` file explaining the approach, tools, and results
-- Simulations were used where realistic setup wasn’t possible due to resource constraints
-
-
 
