@@ -2,48 +2,42 @@
 
 ## Group Details
 
-- **Group Number**: 2
+- **Group Number**: 3
 - **Members**:
-  - AHMED AL MUGHIRAH– ID: 202018480 (50%) 
-  - ESSA  ALMUTAWA  – ID: 201959470  (50%)
+  - AHMED AL MUGHIRAH – ID: 202018480 (33%) 
+  - ESSA  ALMUTAWA  – ID: 201959470  (33%)
+  - ABDULRAHEEM ALSIBYANI – ID: 202176530  (33%)
 
 ---
 
-## 📁 Repository Structure
 
-```
-ics344-project/
-│
-├── Phase1/
-│   ├── custom-script/          # Simulated FTP attack via Python
-│   └── Report.pdf
-│
-├── Phase2/
-│   └── Report.pdf
-│
-├── Phase3/
-│   └── Report.pdf
-```
-
----
 
 ## 🧩 Phase Overview
 
+
 ### 🔹 Phase 1: Setup and Compromise
-- Setup Kali Linux as attacker and Windows 7 as victim
-- Conducted Nmap scan to identify open ports
-- Exploited SMB vulnerability (MS17-010) using Metasploit
-- Created and executed a custom Python script simulating an FTP backdoor
+- Configured Kali Linux as the attacker and Metasploitable3 as the victim
+- Verified network connection and scanned victim using Nmap
+- Discovered open SSH port (22) with weak default credentials
+- Exploited the SSH service using Metasploit brute-force module
+- Successfully logged in with credentials `vagrant:vagrant`
+- Developed a custom Python script using Paramiko to automate the attack
+
+---
 
 ### 🔹 Phase 2: SIEM Log Analysis
-- Simulated SIEM setup for log integration
-- Presented attack logs and timeline
-- Compared logs from both victim and attacker perspectives
+- Generated SSH login logs on Kali Linux and transferred them to Windows
+- Installed and configured Splunk for log analysis
+- Enabled auto-mount and indexing of log folder
+- Used Splunk search and visualization tools to analyze and display the attack timeline
+
+---
 
 ### 🔹 Phase 3: Defense and Validation
-- Disabled SMBv1 and simulated MS17-010 patch application
-- Re-ran Metasploit exploit; verified it no longer succeeded
-- Provided screenshots for before-and-after comparison
+- Identified weak SSH credentials as the main vulnerability
+- Installed and configured **Fail2Ban** on Metasploitable3 to block brute-force attempts
+- Re-ran the attack and confirmed the attacker’s IP was banned
+- Verified defense effectiveness through Splunk logs and screenshots
 
 ---
 
